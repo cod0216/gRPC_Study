@@ -8,6 +8,7 @@ option go_package = "productinfo/service/ordermgt";
 
 service OrderManagement {
     rpc getOrder(google.protobuf.StringValue) returns (Order); // 주문을 조회하기 위한 원격 메서드
+    rpc searchOrders(google.protobuf.StringValue) return (stream Order);
 }
 
 message Order { // Order 타입을 정의함
