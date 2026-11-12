@@ -108,9 +108,10 @@ const file_ordermgt_order_management_proto_rawDesc = "" +
 	"\x05items\x18\x02 \x03(\tR\x05items\x12 \n" +
 	"\vdescription\x18\x03 \x01(\tR\vdescription\x12\x14\n" +
 	"\x05price\x18\x04 \x01(\x02R\x05price\x12 \n" +
-	"\vdestination\x18\x05 \x01(\tR\vdestination2M\n" +
+	"\vdestination\x18\x05 \x01(\tR\vdestination2\x8f\x01\n" +
 	"\x0fOrderManagement\x12:\n" +
-	"\bgetOrder\x12\x1c.google.protobuf.StringValue\x1a\x10.ecommerce.OrderB\x1eZ\x1cproductinfo/service/ordermgtb\x06proto3"
+	"\bgetOrder\x12\x1c.google.protobuf.StringValue\x1a\x10.ecommerce.Order\x12@\n" +
+	"\fsearchOrders\x12\x1c.google.protobuf.StringValue\x1a\x10.ecommerce.Order0\x01B\x1eZ\x1cproductinfo/service/ordermgtb\x06proto3"
 
 var (
 	file_ordermgt_order_management_proto_rawDescOnce sync.Once
@@ -131,9 +132,11 @@ var file_ordermgt_order_management_proto_goTypes = []any{
 }
 var file_ordermgt_order_management_proto_depIdxs = []int32{
 	1, // 0: ecommerce.OrderManagement.getOrder:input_type -> google.protobuf.StringValue
-	0, // 1: ecommerce.OrderManagement.getOrder:output_type -> ecommerce.Order
-	1, // [1:2] is the sub-list for method output_type
-	0, // [0:1] is the sub-list for method input_type
+	1, // 1: ecommerce.OrderManagement.searchOrders:input_type -> google.protobuf.StringValue
+	0, // 2: ecommerce.OrderManagement.getOrder:output_type -> ecommerce.Order
+	0, // 3: ecommerce.OrderManagement.searchOrders:output_type -> ecommerce.Order
+	2, // [2:4] is the sub-list for method output_type
+	0, // [0:2] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
 	0, // [0:0] is the sub-list for field type_name
